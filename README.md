@@ -14,13 +14,22 @@ Este repositório contém uma **coleção de agentes personalizados do GitHub Co
 
 ### 🎯 Agentes Disponíveis
 
-| 🔧 Agente | 📝 Descrição | ⚡ Especialização |
-|-----------|--------------|------------------|
-| **Coding Agent** | Desenvolvimento e implementação | Features, debugging, arquitetura |
-| **Documentation Agent** | Criação de documentação | READMEs, APIs, tutoriais |
-| **Review Agent** | Análise e revisão de código | Code review, qualidade, segurança |
-| **Refinement Agent** | Otimização e refatoração | Performance, clean code, patterns |
-| **Commit Agent** | Gestão de commits e versionamento | Conventional commits, changelogs |
+| 🔧 Agente | 📝 Descrição | ⚡ Especialização | 📋 To-Dos |
+|-----------|--------------|------------------|-----------|
+| **Coding Agent** | Desenvolvimento e implementação | Features, debugging, arquitetura | ✅ Step-by-step |
+| **Documentation Agent** | Criação de documentação | READMEs, APIs, tutoriais | ✅ Planejamento |
+| **Review Agent** | Análise e revisão de código | Code review, qualidade, segurança | ✅ Revisão sistemática |
+| **Refinement Agent** | Refinamento de tarefas | Histórias de usuário, análise | ✅ Gera to-dos |
+| **Commit Agent** | Gestão de commits e versionamento | Conventional commits, changelogs | ✅ Commits organizados |
+
+### 📋 **NOVO**: Sistema de To-Dos Integrado
+
+Todos os agentes agora trabalham com **metodologia step-by-step** usando to-dos para máxima transparência:
+
+✅ **Planejamento Claro**: Cada tarefa é quebrada em steps organizados  
+✅ **Progresso Visível**: Acompanhe cada etapa em tempo real  
+✅ **Integração entre Agentes**: @refinement-agent → @coding-agent com to-dos estruturados  
+✅ **Transparência Total**: Veja exatamente o que está sendo feito e o que vem a seguir
 
 ---
 
@@ -68,6 +77,16 @@ No VS Code, abra o **GitHub Copilot Chat** e digite:
 
 ```text
 @documentation-agent Crie documentação para esta API
+```
+
+### 🎯 **NOVO**: Fluxo Integrado com To-Dos
+
+```text
+@refinement-agent Refine esta ideia: sistema de gestão de produtos
+↓ (Gera história + to-dos estruturados)
+@coding-agent Implemente a história que o @refinement-agent criou
+↓ (Trabalha step-by-step com progresso visível)
+@review-agent Revise o código implementado pelo @coding-agent
 ```
 
 ---
@@ -129,9 +148,10 @@ Sou um especialista em [área de expertise]...
 |------|-----------|
 | **🎯 Seja Específico** | Defina claramente o escopo e especialização |
 | **😊 Use Emojis** | Facilita a identificação visual |
-| **🛠️ Liste Ferramentas** | Inclua apenas as tools necessárias |
+| **🛠️ Liste Ferramentas** | Inclua apenas as tools necessárias (adicione 'todos' se precisar de planejamento) |
 | **📚 Exemplos Práticos** | Mostre casos de uso reais |
 | **📖 Instruções Claras** | Defina comportamentos esperados |
+| **📋 Metodologia To-Dos** | Para tarefas complexas, inclua sistema de to-dos step-by-step |
 
 ---
 

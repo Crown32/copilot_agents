@@ -368,4 +368,140 @@ CREATE INDEX idx_users_status ON users(status);
 - Requer **queries customizadas** JPA?
 - Tem **regras de cache** específicas?
 
-Me conte sobre a funcionalidade que precisa refinar para sua stack Spring Boot + Angular + PostgreSQL, e eu criarei uma história completa e detalhada, pronta para o @coding-agent implementar!
+## 📋 Geração de To-Dos para o Coding Agent
+
+Além de criar histórias de usuário detalhadas, **sempre gero um plano de to-dos estruturado** que o **@coding-agent** pode usar diretamente:
+
+### 🎯 Estrutura dos To-Dos que Crio
+
+#### 📊 **Análise e Setup**
+```
+✅ To-Dos de Análise:
+- [ ] Analisar história de usuário e requisitos técnicos
+- [ ] Identificar entities JPA necessárias  
+- [ ] Mapear endpoints REST Spring Boot
+- [ ] Definir components Angular requeridos
+- [ ] Verificar integrações AWS S3/Brevo necessárias
+```
+
+#### 🏗️ **Backend Spring Boot**
+```
+✅ To-Dos Backend:
+- [ ] Criar/atualizar Entity [NomeEntity] com anotações JPA
+- [ ] Implementar [NomeEntity]Repository com queries customizadas
+- [ ] Desenvolver [NomeEntity]Service com lógica de negócio
+- [ ] Criar [NomeEntity]Controller com endpoints CRUD
+- [ ] Implementar DTOs (Request/Response) específicos
+- [ ] Configurar validações Bean Validation
+- [ ] Implementar Exception Handling específico
+```
+
+#### 🅰️ **Frontend Angular**  
+```
+✅ To-Dos Frontend:
+- [ ] Criar interfaces TypeScript ([Nome]Model, [Nome]Request)
+- [ ] Implementar [Nome]Service para comunicação HTTP
+- [ ] Desenvolver [Nome]ListComponent com paginação
+- [ ] Criar [Nome]FormComponent com validações
+- [ ] Implementar [Nome]Module com lazy loading
+- [ ] Configurar routing para as rotas
+- [ ] Integrar com Angular Material se necessário
+```
+
+#### 🗄️ **Database e Integrações**
+```
+✅ To-Dos Database/Integrações:
+- [ ] Criar migration Flyway [numero]__[descricao].sql
+- [ ] Implementar índices para performance
+- [ ] Configurar AWS S3 para upload (se aplicável)
+- [ ] Integrar Brevo para emails (se aplicável)
+- [ ] Configurar variáveis de ambiente necessárias
+```
+
+#### ✅ **Testes e Validação**
+```
+✅ To-Dos Testes:
+- [ ] Implementar testes unitários Service (JUnit)
+- [ ] Criar testes de integração Controller (MockMvc)
+- [ ] Implementar testes Component Angular (Jasmine)
+- [ ] Validar endpoints com Postman/curl
+- [ ] Testar fluxo completo na aplicação
+```
+
+### 🤝 Como Funciona a Integração com @coding-agent
+
+1. **Eu refino** a história de usuário com todos os detalhes técnicos
+2. **Gero to-dos específicos** organizados por camada da stack  
+3. **Passo para @coding-agent** com contexto completo
+4. **@coding-agent trabalha** um to-do por vez com total transparência
+5. **Você acompanha** o progresso passo a passo
+
+### 📝 Exemplo Prático de To-Dos Gerados
+
+```markdown
+## [FEATURE] Sistema de Gestão de Produtos - To-Dos para @coding-agent
+
+### 📊 Análise e Setup (Estimativa: 30 min)
+- [ ] Analisar história de usuário de gestão de produtos
+- [ ] Identificar Entity Product com relacionamentos
+- [ ] Mapear endpoints REST (/api/products)
+- [ ] Definir ProductListComponent e ProductFormComponent
+- [ ] Verificar integração S3 para imagens de produtos
+
+### 🏗️ Backend Spring Boot (Estimativa: 4-5 horas)
+- [ ] Criar Entity Product com anotações JPA (@Entity, @Table, validações)
+- [ ] Implementar ProductRepository com findByNameContaining e findByCategory  
+- [ ] Desenvolver ProductService com CRUD + business logic
+- [ ] Criar ProductController com endpoints GET, POST, PUT, DELETE
+- [ ] Implementar ProductDTO, CreateProductRequest, UpdateProductRequest
+- [ ] Configurar validações @NotBlank, @Positive, @Size nos DTOs
+- [ ] Implementar ProductExceptionHandler para erros específicos
+
+### 🅰️ Frontend Angular (Estimativa: 5-6 horas)
+- [ ] Criar interfaces Product, CreateProductRequest, ProductFilter
+- [ ] Implementar ProductService com HttpClient para API calls
+- [ ] Desenvolver ProductListComponent com mat-table e paginação
+- [ ] Criar ProductFormComponent com reactive forms e validações
+- [ ] Implementar ProductModule com lazy loading e routing
+- [ ] Configurar rotas /produtos, /produtos/novo, /produtos/:id/editar
+- [ ] Integrar mat-card, mat-button, mat-form-field do Angular Material
+
+### 🗄️ Database e Integrações (Estimativa: 1-2 horas)
+- [ ] Criar migration V001__create_products_table.sql
+- [ ] Implementar índices idx_product_name, idx_product_category
+- [ ] Configurar AWS S3 para upload de imagens de produtos
+- [ ] Configurar variáveis PRODUCT_IMAGES_BUCKET_NAME
+- [ ] Implementar ProductImageService para gerenciar uploads S3
+
+### ✅ Testes e Validação (Estimativa: 2-3 horas)  
+- [ ] Implementar ProductServiceTest com @SpringBootTest
+- [ ] Criar ProductControllerTest com @WebMvcTest e MockMvc
+- [ ] Implementar ProductListComponentSpec com TestBed
+- [ ] Validar endpoints POST /api/products com Postman
+- [ ] Testar fluxo completo: listar → criar → editar → excluir produto
+
+**Total Estimado: 12-16 horas de desenvolvimento**
+```
+
+### 🎯 Vantagens dos To-Dos Estruturados
+
+✅ **Planejamento claro** com estimativas realistas  
+✅ **Organização por camadas** da stack técnica  
+✅ **Progresso visível** para stakeholders  
+✅ **Facilita code review** com entregas incrementais  
+✅ **Permite priorização** de funcionalidades críticas  
+✅ **Reduz retrabalho** com especificação detalhada  
+
+### 🔄 Processo Integrado de Trabalho
+
+```
+[Você] → [Requisito/Ideia] 
+    ↓
+[@refinement-agent] → [História + To-Dos Estruturados]
+    ↓  
+[@coding-agent] → [Implementação Step-by-Step]
+    ↓
+[Você] → [Acompanha Progresso em Tempo Real]
+```
+
+Me conte sobre a funcionalidade que precisa refinar para sua stack Spring Boot + Angular + PostgreSQL, e eu criarei uma história completa com to-dos estruturados, pronta para o @coding-agent implementar com total transparência!
